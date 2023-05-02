@@ -1,18 +1,18 @@
 import React from 'react'
 import { Button, Form } from 'react-bootstrap'
 
-function Add() {
+function View() {
   return (
     <div style={styles.container}>
         <div style={styles.contentBox}>
-            <img width="400" height="300" src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQkrjYxSfSHeCEA7hkPy8e2JphDsfFHZVKqx-3t37E4XKr-AT7DML8IwtwY0TnZsUcQ"></img>            
-            <input style={styles.input} type="file"/>              
+            <img width="400" height="300" src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQkrjYxSfSHeCEA7hkPy8e2JphDsfFHZVKqx-3t37E4XKr-AT7DML8IwtwY0TnZsUcQ"></img>                                    
             <center style={styles.formContainer}>
-                <Form.Control/>            
-                <Form.Label >Add a title</Form.Label>
-                <div style={styles.buttonsContainer} className="d-grid gap-2">
-                    <Button variant="warning" size="lg" >Process Image</Button>{' '}
-                    <Button variant="primary" size="lg">Add Image</Button>{' '}          
+                <h3>Title here</h3>
+                {/* <Form.Control/>            
+                <Form.Label >Edit title</Form.Label> */}
+                <div style={styles.buttonsContainer} className="d-grid gap-2">                    
+                    <Button variant="primary" size="lg">Download Image</Button>{' '}          
+                    <Button variant="secondary" size="lg">Back</Button>{' '}          
                 </div>
             </center>
         </div>
@@ -54,4 +54,4 @@ const styles = {
     }
 }
 
-export default Add
+export default View
